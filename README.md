@@ -1,5 +1,5 @@
-# Embedded-NTUA
+# Embedded Systems NTUA, 9th Semester
 
-Embedded Systems Assignments, Undergrad. 9th semester, ECE NTUA.
+Course Assignments, Undergrad. 9th semester, ECE NTUA.
 
 Collaborator: [G. Mantaos](https://www.gmantaos.com)
