@@ -3,7 +3,7 @@ CC=gcc
 CFLAGS=-O0
 
 main:	main.c
-	$(CC) -o main main.c $(CFLAGS)
+    $(CC) -o main main.c $(CFLAGS)
 
 base:	phods.c
-	$(CC) -o phods phods.c $(CFLAGS)
+    $(CC) -o phods phods.c $(CFLAGS)

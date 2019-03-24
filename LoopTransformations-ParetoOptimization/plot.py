@@ -11,12 +11,12 @@ y = []
 val = []
 
 with open('./out.csv', 'r') as f:
-	f.readline()
-	for line in f:
-		tokens = list(map(int, line.strip().split(',')))
-		x.append(tokens[0])
-		y.append(tokens[1])
-		val.append(tokens[2])
+    f.readline()
+    for line in f:
+        tokens = list(map(int, line.strip().split(',')))
+        x.append(tokens[0])
+        y.append(tokens[1])
+        val.append(tokens[2])
 
 X = np.array(x)
 Y = np.array(y)

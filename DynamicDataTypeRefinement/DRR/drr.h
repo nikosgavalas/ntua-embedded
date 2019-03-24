@@ -16,24 +16,22 @@
 #include "../synch_implementations/cdsl_dyn_array.h"
 #endif
 
-typedef struct Packet_struct
-{
-	unsigned int src;
-	unsigned int dst;
-	unsigned int size;
+typedef struct Packet_struct {
+    unsigned int src;
+    unsigned int dst;
+    unsigned int size;
 } Packet;
 
-typedef struct Node_struct
-{
-	unsigned int src_ip; //source IP of the node
-	unsigned int dst_ip; //destination IP of the node
-	unsigned int no_of_packets;
-	unsigned int deficit;
+typedef struct Node_struct {
+    unsigned int src_ip;  //source IP of the node
+    unsigned int dst_ip;  //destination IP of the node
+    unsigned int no_of_packets;
+    unsigned int deficit;
 #if defined(SLL_PK)
-	cdsl_sll *pList;
+    cdsl_sll *pList;
 #elif defined(DLL_PK)
-	cdsl_dll *pList;
+    cdsl_dll *pList;
 #else
-	cdsl_dyn_array *pList;
+    cdsl_dyn_array *pList;
 #endif
 } Node;
